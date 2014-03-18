@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Hexo</title>
+  <title>Archives | 马文谦的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="og:type" content="blog">
 <meta name="og:title">
 <meta name="og:url" content="http://yoursite.com/archives/">
 <meta name="og:image">
-<meta name="og:site_name" content="Hexo">
+<meta name="og:site_name" content="马文谦的个人博客">
 <meta name="og:description">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="马文谦的个人博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -31,8 +31,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">马文谦的个人博客</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">不恨古人吾不见，恨古人不见吾狂耳</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -59,10 +63,167 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-我的第一篇博文" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/03/18/我的第一篇博文/" class="article-date">
+  <time datetime="2014-03-18T04:22:44.000Z" itemprop="datePublished">3月 18 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/03/18/我的第一篇博文/">我的第一篇博文</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>包含各种MarkDown的测试。</p>
+<p>[TOC]</p>
+<h1 id="博客建立的前因后果">博客建立的前因后果</h1>
+<hr>
+<p>去年我在BAE上做了一个小网站，虽然除了给一个同学写了个祝生日快乐的小网页之外，几乎没别的作用，但是还是感觉有一个网站可以折腾是挺有意思的一件事。</p>
+<p>BAE开始收费后，我就果断放弃了它，然后寻找到了<em>免费</em>而<strong>强大</strong>的 <a href="https://github.com/" target="_blank">GitHub</a>，之后又发现了<em>免费</em>而<strong>强大</strong>的 <code>hexo</code><a href="https://github.com/tommy351/hexo/" target="_blank">^fn1</a>，再加上<em>免费</em>而<strong>强大</strong>的 <code>MarkDown</code> ，我的网站就这样诞生了。</p>
+<h1 id="建立博客用到的几个东西">建立博客用到的几个东西</h1>
+<hr>
+<h2 id="1-_Github">1. Github</h2>
+<p>在这个网站[GitHub.io](<a href="http://pages.github.com/），可以找到简单的教程，根据网页上的步骤，可以迅速的建立起一个属于我的网站。当然，是一个没有数据库、只有静态网页的网站。这已经足够建立一个博客了。" target="_blank">http://pages.github.com/），可以找到简单的教程，根据网页上的步骤，可以迅速的建立起一个属于我的网站。当然，是一个没有数据库、只有静态网页的网站。这已经足够建立一个博客了。</a></p>
+<p>在进行上述过程中，需要学会Git工具的使用。因为在大学里学过Linux的课程，所以终端式的 <code>Git Bash</code> 我很快就入门了。</p>
+<p><del>其实只需要记住四句话</del></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre>git clone https://github<span class="preprocessor">.com</span>/username/username<span class="preprocessor">.github</span><span class="preprocessor">.io</span>
+git <span class="keyword">add</span> --all
+git commit -m <span class="string">"Initial commit"</span>
+git <span class="keyword">push</span>
+</pre></td></tr></table></figure>
+
+<p>当然我后来发现 <code>GitHub for Windows</code>[^fn2] 非常方便，如果不喜欢敲一堆命令的话，用这个也一样。</p>
+<h2 id="2-_Hexo">2. Hexo</h2>
+<p>之后我需要一个生成静态网页的工具。Github使用的是 <code>jekyll</code> ，而有网友推荐jekyll的加强版 <code>octopress</code> ，但是因为这两个都是需要Ruby环境的，所有我选择了以 <code>Node.js</code> 开发的hexo。使用hexo的步骤：</p>
+<ol>
+<li>下载并安装Node.js。官网下载，傻瓜式安装。</li>
+<li>使用 <code>npm install -g hexo</code> ，安装hexo</li>
+<li>几个记不住的命令和一堆记不住的配置文件。详情请见某个大神的博客里的一篇文章<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">hexo系列教程：（二）搭建hexo博客</a>。</li>
+</ol>
+<p>其实我也是刚刚才开始用hexo，几乎完全不会。不过即使这样，我的博客也像模像样了。</p>
+<h2 id="3-_MarkDown">3. MarkDown</h2>
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<ul>
+<li>书写一个质能守恒公式：</li>
+</ul>
+<p>$$E=mc^2$$</p>
+<ul>
+<li>或者高亮一段代码[^code]：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="comment">/**
+* nth element in the fibonacci series.
+* @param n &gt;= 0
+* @return the nth element, &gt;= 0.
+*/</span>
+<span class="function"><span class="keyword">function</span> <span class="title">fib</span><span class="params">(n)</span> {</span>
+  <span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">1</span>;
+  <span class="keyword">var</span> tmp;
+  <span class="keyword">while</span> (--n &gt;= <span class="number">0</span>) {
+    tmp = a;
+    a += b;
+    b = tmp;
+  }
+  <span class="keyword">return</span> a;
+}
+
+document.write(fib(<span class="number">10</span>));
+</pre></td></tr></table></figure>
+
+<ul>
+<li>甚至是生成一个表格：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th style="text-align:right">定位</th>
+<th style="text-align:center">真正定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>撼地神牛</td>
+<td style="text-align:right">强力团控</td>
+<td style="text-align:center">死成狗的ATM</td>
+</tr>
+<tr>
+<td>幻影长矛手</td>
+<td style="text-align:right">推塔能力最强的后期</td>
+<td style="text-align:center">拖队友后腿</td>
+</tr>
+<tr>
+<td>军团指挥官</td>
+<td style="text-align:right">稳定强力的先手控</td>
+<td style="text-align:center">野区吸血鬼</td>
+</tr>
+</tbody>
+</table>
+<p>总之是一个方便又好用的东西。你可以在<a href="https://www.zybuluo.com/mdeditor" target="_blank">这个网站</a>上在线编辑测试，也可以在同一个网站里找到学校MarkDown的相关资料。</p>
+<h1 id="其他一些东西">其他一些东西</h1>
+<hr>
+<p>我可能会写写日记，写写学习到的各种技术，当然也有可能玩腻了就不管了。在我查资料的过程中，有个博主全面的介绍了使用github搭建个人博客的方法，在下面的留言中，有很多人反对博主这么做。他们认为github的用处本应是代码托管和资源分享，不应该用来建个人博客。而一旦有更多的人知道可以在github上建博客，有可能造成很多像我一样的人去建立博客，却不进行资源的分享，进而使github不得不考虑封掉大陆的ip。具体的内容我忘了，反正我觉得我这么一个小博客是占不了github多少资源的，与其担心github封掉大陆的ip，还不如担心大陆封掉github的ip。</p>
+<p>最后，一句话与所有程序员共勉：</p>
+<blockquote>
+<p>优秀的代码是它自己最好的文档。当你考虑要添加一个注释时，问问自己，“如何能改进这段代码，以让它不需要注释？”<br>-Steve McConnell</p>
+</blockquote>
+<p><img src="http://static.mengniang.org/7/7b/Pixiv_id_42268115.jpg" alt=""></p>
+<p>[^fn2]: <a href="https://github-windows.s3.amazonaws.com/GitHubSetup.exe" target="_blank">GitHub for Windows 下载</a><br>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/03/18/我的第一篇博文/" data-id="yrmtl27l8vnam71y" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文章/">文章</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-new-post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/03/17/new-post/" class="article-date">
-  <time datetime="2014-03-17T08:08:33.000Z" itemprop="datePublished">Mar 17 2014</time>
+  <time datetime="2014-03-17T08:08:33.000Z" itemprop="datePublished">3月 17 2014</time>
 </a>
     
   </div>
@@ -85,7 +246,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/03/17/new-post/" data-id="aipw2vyfk11kcyym" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/03/17/new-post/" data-id="fk3r585n2dag32x3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -98,7 +259,7 @@
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/03/17/hello-world/" class="article-date">
-  <time datetime="2014-03-17T08:07:48.000Z" itemprop="datePublished">Mar 17 2014</time>
+  <time datetime="2014-03-17T08:07:48.000Z" itemprop="datePublished">3月 17 2014</time>
 </a>
     
   </div>
@@ -122,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/03/17/hello-world/" data-id="6n32yq4kw5c031qa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/03/17/hello-world/" data-id="5wss1b0wja6y2n9k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,16 +299,37 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/文章/">文章</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/博客/" style="font-size: NaNpx;">博客</a><a href="/tags/文章/" style="font-size: NaNpx;">文章</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03">March 2014</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03">三月 2014</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -157,6 +339,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2014/03/18/我的第一篇博文/">我的第一篇博文</a>
+          </li>
         
           <li>
             <a href="/2014/03/17/new-post/">New Post</a>
@@ -178,7 +364,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2014 John Doe<br>
+      &copy; 2014 Mark<br>
       Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
     </div>
   </div>
