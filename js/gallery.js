@@ -2,15 +2,13 @@
   // Caption
   $('.entry').each(function(i){
     $(this).find('img').each(function(){
-      if (!$(this).parent().is("a")) {
-        var alt = this.alt, title = this.title;
-        var caption = title ? title : alt;
-        if (caption){
-          $(this).after('<div class="caption"><i  class="fa fa-picture-o"></i>' + caption + '</div>');
-        }
+      var alt = this.alt;
 
-        $(this).wrap('<a href="' + this.src + '" title="' + caption + '" class="fancybox" rel="gallery' + i + '" />');
+      if (alt){
+        $(this).after('<span class="caption">' + alt + '</span>');
       }
+
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery' + i + '" />');
     });
   });
 
