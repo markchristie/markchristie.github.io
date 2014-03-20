@@ -18,6 +18,8 @@ BAE开始收费后，我就果断放弃了它，然后寻找到了免费而强�
     
     
     
+    <link rel="alternative" href="/about/atom.xml" title="马文谦的个人博客" type="application/atom+xml">
+    
     
     <link rel="icon" href="/img/favicon.ico">
     
@@ -46,9 +48,11 @@ BAE开始收费后，我就果断放弃了它，然后寻找到了免费而强�
 				<ul>
 					<ul>
 					 
-						<li><a href="/">Home</a></li>
+						<li><a href="/">首页</a></li>
 					
-						<li><a href="/archives">Archives</a></li>
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
 					
 					<li>
 					
@@ -269,26 +273,31 @@ document.write(fib(<span class="number">10</span>));
 
 
   
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/GitHub/" title="GitHub">GitHub<sup>1</sup></a></li>
-		
-			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-		
-			<li><a href="/tags/博客/" title="博客">博客<sup>2</sup></a></li>
-		
-			<li><a href="/tags/教程/" title="教程">教程<sup>1</sup></a></li>
-		
-			<li><a href="/tags/文章/" title="文章">文章<sup>1</sup></a></li>
-		
-		</ul>
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/GitHub/" style="font-size: 10.00px;">GitHub</a><a href="/tags/hexo/" style="font-size: 10.00px;">hexo</a><a href="/tags/博客/" style="font-size: 20.00px;">博客</a><a href="/tags/教程/" style="font-size: 10.00px;">教程</a><a href="/tags/文章/" style="font-size: 10.00px;">文章</a>
+    </div>
+  </div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03">三月 2014</a><span class="archive-list-count">2</span></li></ul>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
+      <li><a href="http://zespia.tw/hexo" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
 </div>
 
-
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/about/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
@@ -438,6 +447,27 @@ $(document).ready(function(){
 </script> 
 
 
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
 
 
 
