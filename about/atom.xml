@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[马文谦的个人博客]]></title>
+  <title><![CDATA[Mark's Blog]]></title>
   <subtitle><![CDATA[不恨古人吾不见，恨古人不见吾狂耳]]></subtitle>
   <link href="//about/atom.xml" rel="self"/>
   <link href="http://markchristie.github.io/"/>
-  <updated>2014-03-20T08:51:12.427Z</updated>
+  <updated>2014-03-21T07:48:11.072Z</updated>
   <id>http://markchristie.github.io/</id>
   
   <author>
