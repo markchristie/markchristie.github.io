@@ -62,7 +62,7 @@ function hover(event, pos, item){
         var x = item.datapoint[0].toFixed(2),
             y = item.datapoint[1].toFixed(2);
 
-        $("#tooltip").html(item.series.label + " " + x + " 数量 " + parseInt(y))
+        $("#tooltip").html(item.series.label + /*" " + x + */" " + parseInt(y))
             .css({top: item.pageY + 5, left: item.pageX + 5})
             .fadeIn(200);
     } else {
