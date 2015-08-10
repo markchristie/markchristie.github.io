@@ -1,0 +1,215 @@
+/**
+ * Created by Mark on 2015/8/10 0010.
+ */
+var report_gjxc = [];
+report_gjxc.push([1, 0]);
+report_gjxc.push([2, 3]);
+report_gjxc.push([3, 7]);
+report_gjxc.push([4, 2]);
+report_gjxc.push([5, 3]);
+report_gjxc.push([6, 0]);
+report_gjxc.push([7, 5]);
+report_gjxc.push([8, 1]);
+report_gjxc.push([9, 3]);
+report_gjxc.push([10, 0]);
+report_gjxc.push([11, 1]);
+report_gjxc.push([12, 0]);
+report_gjxc.push([13, 1]);
+report_gjxc.push([14, 4]);
+report_gjxc.push([15, 2]);
+report_gjxc.push([16, 0]);
+report_gjxc.push([17, 6]);
+report_gjxc.push([18, 14]);
+report_gjxc.push([19, 11]);
+report_gjxc.push([20, 12]);
+
+var report_ykgc = [];
+report_ykgc.push([1, 0]);
+report_ykgc.push([2, 0]);
+report_ykgc.push([3, 0]);
+report_ykgc.push([4, 2]);
+report_ykgc.push([5, 2]);
+report_ykgc.push([6, 9]);
+report_ykgc.push([7, 3]);
+report_ykgc.push([8, 5]);
+report_ykgc.push([9, 9]);
+report_ykgc.push([10, 3]);
+report_ykgc.push([11, 6]);
+report_ykgc.push([12, 6]);
+report_ykgc.push([13, 3]);
+report_ykgc.push([14, 5]);
+report_ykgc.push([15, 1]);
+report_ykgc.push([16, 3]);
+report_ykgc.push([17, 5]);
+report_ykgc.push([18, 13]);
+report_ykgc.push([19, 16]);
+report_ykgc.push([20, 10]);
+
+var report_hdhy = [];
+report_hdhy.push([1, 0]);
+report_hdhy.push([2, 0]);
+report_hdhy.push([3, 0]);
+report_hdhy.push([4, 0]);
+report_hdhy.push([5, 0]);
+report_hdhy.push([6, 0]);
+report_hdhy.push([7, 0]);
+report_hdhy.push([8, 0]);
+report_hdhy.push([9, 7]);
+report_hdhy.push([10, 6]);
+report_hdhy.push([11, 11]);
+report_hdhy.push([12, 7]);
+report_hdhy.push([13, 8]);
+report_hdhy.push([14, 4]);
+report_hdhy.push([15, 4]);
+report_hdhy.push([16, 4]);
+report_hdhy.push([17, 12]);
+report_hdhy.push([18, 13]);
+report_hdhy.push([19, 13]);
+report_hdhy.push([20, 6]);
+
+var report_sum = [];
+for(var i=0;i<report_gjxc.length;i++){
+    report_sum.push([i+1, report_gjxc[i][1] + report_ykgc[i][1] + report_hdhy[i][1]]);
+}
+
+var visit_gjxc = [];
+visit_gjxc.push([1, 0]);
+visit_gjxc.push([2, 1]);
+visit_gjxc.push([3, 1]);
+visit_gjxc.push([4, 1]);
+visit_gjxc.push([5, 1]);
+visit_gjxc.push([6, 0]);
+visit_gjxc.push([7, 1]);
+visit_gjxc.push([8, 1]);
+visit_gjxc.push([9, 0]);
+visit_gjxc.push([10, 0]);
+visit_gjxc.push([11, 0]);
+visit_gjxc.push([12, 0]);
+visit_gjxc.push([13, 1]);
+visit_gjxc.push([14, 0]);
+visit_gjxc.push([15, 1]);
+visit_gjxc.push([16, 0]);
+visit_gjxc.push([17, 1]);
+visit_gjxc.push([18, 3]);
+visit_gjxc.push([19, 3]);
+visit_gjxc.push([20, 0]);
+
+var visit_ykgc = [];
+visit_ykgc.push([1, 0]);
+visit_ykgc.push([2, 0]);
+visit_ykgc.push([3, 0]);
+visit_ykgc.push([4, 0]);
+visit_ykgc.push([5, 0]);
+visit_ykgc.push([6, 0]);
+visit_ykgc.push([7, 0]);
+visit_ykgc.push([8, 5]);
+visit_ykgc.push([9, 2]);
+visit_ykgc.push([10, 1]);
+visit_ykgc.push([11, 2]);
+visit_ykgc.push([12, 5]);
+visit_ykgc.push([13, 0]);
+visit_ykgc.push([14, 0]);
+visit_ykgc.push([15, 0]);
+visit_ykgc.push([16, 0]);
+visit_ykgc.push([17, 0]);
+visit_ykgc.push([18, 0]);
+visit_ykgc.push([19, 5]);
+visit_ykgc.push([20, 5]);
+
+var visit_hdhy = [];
+visit_hdhy.push([1, 0]);
+visit_hdhy.push([2, 0]);
+visit_hdhy.push([3, 0]);
+visit_hdhy.push([4, 0]);
+visit_hdhy.push([5, 0]);
+visit_hdhy.push([6, 0]);
+visit_hdhy.push([7, 0]);
+visit_hdhy.push([8, 0]);
+visit_hdhy.push([9, 0]);
+visit_hdhy.push([10, 2]);
+visit_hdhy.push([11, 6]);
+visit_hdhy.push([12, 3]);
+visit_hdhy.push([13, 2]);
+visit_hdhy.push([14, 1]);
+visit_hdhy.push([15, 1]);
+visit_hdhy.push([16, 0]);
+visit_hdhy.push([17, 2]);
+visit_hdhy.push([18, 2]);
+visit_hdhy.push([19, 3]);
+visit_hdhy.push([20, 3]);
+
+var visit_sum = [];
+for(var j=0;j<visit_gjxc.length;j++){
+    visit_sum.push([j+1, visit_gjxc[j][1] + visit_ykgc[j][1] + visit_hdhy[j][1]]);
+}
+
+var deal_gjxc = [];
+deal_gjxc.push([1, 0]);
+deal_gjxc.push([2, 0]);
+deal_gjxc.push([3, 0]);
+deal_gjxc.push([4, 0]);
+deal_gjxc.push([5, 0]);
+deal_gjxc.push([6, 0]);
+deal_gjxc.push([7, 0]);
+deal_gjxc.push([8, 0]);
+deal_gjxc.push([9, 0]);
+deal_gjxc.push([10, 0]);
+deal_gjxc.push([11, 0]);
+deal_gjxc.push([12, 0]);
+deal_gjxc.push([13, 0]);
+deal_gjxc.push([14, 0]);
+deal_gjxc.push([15, 0]);
+deal_gjxc.push([16, 0]);
+deal_gjxc.push([17, 1]);
+deal_gjxc.push([18, 1]);
+deal_gjxc.push([19, 0]);
+deal_gjxc.push([20, 0]);
+
+var deal_ykgc = [];
+deal_ykgc.push([1, 0]);
+deal_ykgc.push([2, 0]);
+deal_ykgc.push([3, 0]);
+deal_ykgc.push([4, 0]);
+deal_ykgc.push([5, 0]);
+deal_ykgc.push([6, 0]);
+deal_ykgc.push([7, 0]);
+deal_ykgc.push([8, 0]);
+deal_ykgc.push([9, 0]);
+deal_ykgc.push([10, 1]);
+deal_ykgc.push([11, 0]);
+deal_ykgc.push([12, 0]);
+deal_ykgc.push([13, 0]);
+deal_ykgc.push([14, 0]);
+deal_ykgc.push([15, 0]);
+deal_ykgc.push([16, 0]);
+deal_ykgc.push([17, 0]);
+deal_ykgc.push([18, 0]);
+deal_ykgc.push([19, 0]);
+deal_ykgc.push([20, 0]);
+
+var deal_hdhy = [];
+deal_hdhy.push([1, 0]);
+deal_hdhy.push([2, 0]);
+deal_hdhy.push([3, 0]);
+deal_hdhy.push([4, 0]);
+deal_hdhy.push([5, 0]);
+deal_hdhy.push([6, 0]);
+deal_hdhy.push([7, 0]);
+deal_hdhy.push([8, 0]);
+deal_hdhy.push([9, 0]);
+deal_hdhy.push([10, 0]);
+deal_hdhy.push([11, 0]);
+deal_hdhy.push([12, 0]);
+deal_hdhy.push([13, 0]);
+deal_hdhy.push([14, 0]);
+deal_hdhy.push([15, 0]);
+deal_hdhy.push([16, 0]);
+deal_hdhy.push([17, 0]);
+deal_hdhy.push([18, 0]);
+deal_hdhy.push([19, 0]);
+deal_hdhy.push([20, 0]);
+
+var deal_sum = [];
+for(var k=0;k<deal_gjxc.length;k++){
+    deal_sum.push([k+1, deal_gjxc[k][1] + deal_ykgc[k][1] + deal_hdhy[k][1]]);
+}
