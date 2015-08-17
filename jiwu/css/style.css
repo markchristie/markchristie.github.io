@@ -3,6 +3,7 @@
 body {
     background: url(background.png) repeat-x;
     font: 18px/1.5em "proxima-nova", Helvetica, Arial, sans-serif;
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
 }
 
 a {	color: #069; }
@@ -11,11 +12,14 @@ a:hover { color: #28b; }
 h2 {
     margin-top: 15px;
     font: normal 32px "omnes-pro", Helvetica, Arial, sans-serif;
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+    text-align: center;
 }
 
 h3 {
     margin-left: 30px;
     font: normal 26px "omnes-pro", Helvetica, Arial, sans-serif;
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
     color: #666;
 }
 
@@ -101,4 +105,17 @@ input[type=checkbox] {
 
 .legend table {
     border-spacing: 5px;
+}
+
+.article {
+    margin: auto;
+    text-align: center;
+}
+
+.article ul {
+    min-height: 400px;
+}
+
+.article ul li {
+    list-style: none;
 }
